@@ -1,0 +1,111 @@
+<!-- updated on July 2023 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <header>
+        <h1 id="title"> Your MBTI Type </h1>
+        <p id="description">
+            Please fill out this form with the required information </p>
+    </header>
+    <hr>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name"> Name </label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your nickname" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email"> Email </label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number"> Age </label>
+            <input type="number" id="number" name="age" min="10" max="90" class="form-control" placeholder="Age"
+                required />
+        </div>
+        <div class="form-group">
+            <label id="bloodtype-label" for="bloodtype"> Blood Type </label>
+            <select id="dropdown" name="bloodtype" class="form-control">
+                <option selected>(A / B / AB / O)</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p> What is your MBTI type? </p>
+            <label>
+                <input name="mbti-type" type="radio" value="INTJ/ENTJ" class="radio-question"> INTJ / ENTJ
+            </label>
+            <label>
+                <input name="mbti-type" type="radio" value="INTP/ENTP" class="radio-question"> INTP / ENTP
+            </label>
+            <label>
+                <input name="mbti-type" type="radio" value="INFJ/ENFJ" class="radio-question"> INFJ / ENFJ
+            </label>
+            <label>
+                <input name="mbti-type" type="radio" value="INFP/ENFP" class="radio-question"> INFP / ENFP
+            </label>
+            <label>
+                <input name="mbti-type" type="radio" value="ISTJ/ESTJ" class="radio-question"> ISTJ / ESTJ
+            </label>
+            <label>
+                <input name="mbti-type" type="radio" value="ISFJ/ESFJ" class="radio-question"> ISFJ / ESFJ
+            </label>
+            <label>
+                <input name="mbti-type" type="radio" value="ISTP/ESTP" class="radio-question"> ISTP / ESTP
+            </label>
+            <label>
+                <input name="mbti-type" type="radio" value="ISFP/ESFP" class="radio-question"> ISFP / ESFP
+            </label>
+        </div>
+        <div class="form-group">
+            <p> Do you agree with your MBTI test result? </p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value> Select one </option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p> Where do you come from? </p>
+            <label>
+                <input name="continent" type="checkbox" value="Africa" class="checkbox-question"> Africa
+            </label>
+            <label>
+                <input name="continent" type="checkbox" value="America" class="checkbox-question"> America
+            </label>
+            <label>
+                <input name="continent" type="checkbox" value="Asia" class="checkbox-question"> Asia
+            </label>
+            <label>
+                <input name="continent" type="checkbox" value="Australia" class="checkbox-question"> Australia
+            </label>
+            <label>
+                <input name="continent" type="checkbox" value="Europe" class="checkbox-question"> Europe
+            </label>
+        </div>
+        <div class="form-group">
+            <p> Other personality test that you have done? </p>
+            <textarea id="others" name="others" class="others-textarea" rows="2" placeholder="Feel free to write here..."></textarea>
+        </div>
+        <button type="submit" id="submit" class="submit-button">
+            Submit
+        </button>
+    </form>
+    <footer>
+        <hr> 2021_crazylazyhazy
+    </footer>
+</body>
+</html>
